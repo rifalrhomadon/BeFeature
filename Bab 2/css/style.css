@@ -1,0 +1,218 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.custom-shape-divider-top-1711592168 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1711592168 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1711592168 .shape-fill {
+  fill: #730992;
+}
+
+/* Header styles */
+header {
+  background-color: #ca94da; /* Warna header */
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+ul li {
+  margin-right: 20px;
+}
+
+/* Main styles */
+.lightstick {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #fafafa; /* Warna background */
+  border-radius: 10px;
+}
+
+.lightstick-content {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.lightstick-image img {
+  max-width: 300px;
+}
+
+.cards-categories {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.card-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.btn_belanja {
+  background-color: #8e24aa; /* Warna tombol */
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn_belanja:hover {
+  background-color: #7b1fa2; /* Warna saat hover */
+}
+
+/* Footer styles */
+footer {
+  width: 90%;
+  height: 50px;
+  background-color: #ca94da; /* Warna footer */
+  padding: 10px 0;
+  text-align: center;
+  position: absolute;
+}
+
+/* Dream theme */
+.lightstick-content h1 {
+  color: #673ab7; /* Warna judul */
+}
+
+.lightstick-content p {
+  color: #757575; /* Warna teks */
+}
+
+.lightstick-content .btn_getStarted {
+  background-color: #673ab7; /* Warna tombol */
+  color: #fff;
+}
+
+.lightstick-content .btn_getStarted:hover {
+  background-color: #5e35b1; /* Warna saat hover */
+}
+
+.login-form {
+  display: block;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login-form h1 {
+  color: #673ab7; /* Warna judul */
+  margin-bottom: 20px;
+}
+
+.input-field {
+  margin-bottom: 15px;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.btn-login {
+  background-color: #673ab7; /* Warna tombol */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #5e35b1; /* Warna saat hover */
+}
+
+/* Style untuk tombol registrasi */
+.btn-register {
+  background-color: #673ab7; /* Warna tombol */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-register:hover {
+  background-color: #5e35b1; /* Warna saat hover */
+}
+
+/* Style untuk footer */
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Style untuk tautan login */
+.register-form p {
+  margin-top: 15px;
+}
+
+.register-form p a {
+  color: #673ab7; /* Warna tautan */
+  text-decoration: none;
+}
+
+.register-form p a:hover {
+  text-decoration: underline;
+}
