@@ -1,0 +1,253 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 240px;
+    background-color: #084154; /* Warna sidebar */
+    transition: width 0.3s ease; /* Menggunakan transition hanya untuk lebar */
+    z-index: 1000;
+    overflow-y: auto; /* Menambahkan overflow-y untuk scrollbar jika konten terlalu panjang */
+}
+
+.sidebar.active {
+    width: 60px; /* Lebar saat sidebar aktif */
+}
+
+.logo-details {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Menengahkan logo dan nama */
+    background-color: #0b5e7f; /* Warna latar belakang logo-details */
+}
+
+.logo-details i {
+    font-size: 28px;
+    color: #fff;
+}
+
+.logo-details .logo_name {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.sidebar .nav-links {
+    margin-top: 20px; /* Mengatur jarak atas dari nav-links */
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar .nav-links li {
+    margin: 8px 0;
+}
+
+.sidebar .nav-links li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    padding: 12px 20px; /* Memberikan padding pada link */
+}
+
+.sidebar .nav-links li a:hover {
+    background-color: #0a4c63; /* Warna hover */
+}
+
+.sidebar .nav-links li a .links_name {
+    font-size: 14px; /* Mengurangi ukuran font */
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.sidebar .nav-links li a .bx {
+    font-size: 20px; /* Mengurangi ukuran icon */
+    margin-right: 15px;
+}
+
+.sidebar.active .logo-details .logo_name {
+    display: none; /* Sembunyikan nama saat sidebar aktif */
+}
+
+.sidebar.active .nav-links li a .links_name {
+    display: none; /* Sembunyikan teks saat sidebar aktif */
+}
+
+.sidebar.active .nav-links li a .bx {
+    margin-right: 0; /* Menghilangkan margin kanan pada icon saat sidebar aktif */
+}
+
+.sidebar.active .logo-details i {
+    margin-left: 0; /* Menghilangkan margin kiri pada logo saat sidebar aktif */
+}
+
+.table-data {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-data th,
+.table-data td {
+    border: 1px solid #ffffff;
+    padding: 8px;
+    text-align: left;
+}
+
+.table-data th {
+    background-color: #ccd3ec;
+}
+
+.table-data tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-data tr:hover {
+    background-color: #ffffff;
+}
+
+.btn {
+    padding: 8px 16px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn-edit {
+    background-color: #4caf50; /* Green */
+    color: white;
+}
+
+.btn-delete {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.btn-edit:hover,
+.btn-delete:hover {
+    background-color: #45a049; /* Darker green */ 
+}
+
+.btn a {
+    text-decoration: none;
+    color: rgb(0, 47, 255);
+}
+
+.sidebar.active {
+    width: 60px; /* Lebar saat sidebar aktif */
+}
+
+.logo-details {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-details i {
+    font-size: 28px;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.logo-details .logo_name {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.sidebar .nav-links {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar .nav-links li {
+    position: relative;
+    margin: 8px 0;
+}
+
+.sidebar .nav-links li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-links li a:hover {
+    background-color: #0b5e7f; /* Warna hover */
+}
+
+.sidebar .nav-links li a .links_name {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 15px;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-links li a .bx {
+    font-size: 22px;
+    margin-right: 15px;
+}
+
+.home-section {
+    position: relative;
+    margin-left: 240px;
+    padding: 20px;
+}
+
+/* Tambahkan CSS untuk mengatur tampilan saat media query */
+@media screen and (max-width: 768px) {
+    .sidebar.active {
+        width: 100%; /* Lebar saat sidebar aktif pada tampilan mobile */
+    }
+
+    .sidebar.active .logo-details .logo_name {
+        display: none;
+    }
+
+    .sidebar.active .nav-links li a .links_name {
+        display: none;
+    }
+
+    .sidebar.active .nav-links li a .bx {
+        margin-right: 0;
+    }
+
+    .sidebar.active .logo-details i {
+        margin-left: 0;
+    }
+
+    .home-section {
+        margin-left: 0;
+    }
+}
+.input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #084154; /* Warna tombol */
+    color: #fff; /* Warna teks tombol */
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0a4c63; /* Warna saat tombol dihover */
+}
